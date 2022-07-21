@@ -1,0 +1,59 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  color: white;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+}
+h1{
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+.aplicacion-materias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin-left: 64px;
+}
+/*Lista de materias*/
+.materias-lista-principal{
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+}
+.horario-lista{
+  width: 1200px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: 10px 0 0 64px;
+  border-radius: 26px;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0%;
+}
+li {
+  text-align: left;
+  width: 200px;
+} 
+.dia {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
