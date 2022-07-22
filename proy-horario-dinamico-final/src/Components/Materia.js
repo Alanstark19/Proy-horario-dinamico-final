@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillPlusCircleFill } from 'react-icons/bs'
 import '../Hojas-de-estilo/Materia.css'
 // recibe las props de Id_materia, Nombre_mat, Nombre_doc, Horario
-function Materia ( {Id_materia, Nombre_mat, Nombre_doc, Horario}  ) {
+function Materia ( {Id_materia, Nombre_mat, Nombre_doc, Horario, eliminarTarea}  ) {
 
     // "Id_materia": "248NEDW",
     //   "Nombre_mat": "Negocios Electrónicos y Desarollo web",
@@ -17,7 +17,8 @@ function Materia ( {Id_materia, Nombre_mat, Nombre_doc, Horario}  ) {
     
     // retorna 
     return (
-      <div className="materia-contenedor">
+      <div className="materia-contenedor"
+      onClick={() => eliminarTarea(Id_materia)}>
         <div className="materia-texto">
           {/* <p> {Id_materia} &nbsp;</p>  */}
           {Nombre_mat }
